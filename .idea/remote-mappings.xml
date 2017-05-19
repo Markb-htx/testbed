@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="php@75408e47-b82e-4017-aa73-c7c73859709e">
+          <settings>
+            <list>
+              <mapping local-root="Z:" remote-root="/home/markb/webserver2" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>
