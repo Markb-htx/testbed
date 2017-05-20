@@ -6,7 +6,7 @@ namespace App\controller;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-class BookingController
+class SoapController
 {
 
     public function booking()

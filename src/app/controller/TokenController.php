@@ -6,10 +6,10 @@ namespace App\controller;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-class BookingController
+class TokenController
 {
 
-    public function booking()
+    public function token()
     {
         //take params
 
@@ -22,14 +22,9 @@ class BookingController
             //create token
         //stop timer
 
-        //inject into xml (json /xml )
+        //generate (json / xml )
 
-        //send to book
-
-        //receive response
-
-        //return response
-
+        //return token
 
 
         echo "hello";
