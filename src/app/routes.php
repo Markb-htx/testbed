@@ -1,4 +1,4 @@
 <?php
 
-$app->get('/', 'BookingController:booking');
+$app->get('/', ['\App\Controllers\BookingController','booking']);
 

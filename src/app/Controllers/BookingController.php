@@ -1,18 +1,21 @@
 <?php
 
 
-namespace App\controller;
+namespace App\Controllers;
 
-use Psr\Http\Message\ResponseInterface;
-use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Message\ResponseInterface as Response;
+use Psr\Http\Message\ServerRequestInterface as Request;
+use App\middleware\Tokeniser as Tokeniser;
 
 class BookingController
 {
 
-    public function booking()
+    public function booking(Request $request,Response $response, Tokeniser $token)
     {
         //take params
 
+        $x = $token->TokenGenerator();
+        var_dump($x);
         //what type of rest is it (json / xml )
 
         //validate

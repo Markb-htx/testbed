@@ -3,13 +3,13 @@
 
 namespace App\controller;
 
-use Psr\Http\Message\ResponseInterface;
-use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Message\ResponseInterface as Response;
+use Psr\Http\Message\ServerRequestInterface as Request;
 
-class SoapController
+class TokenController
 {
 
-    public function booking()
+    public function token(Request $request,Response $response)
     {
         //take params
 
@@ -22,14 +22,9 @@ class SoapController
             //create token
         //stop timer
 
-        //inject into xml (json /xml )
+        //generate (json / xml )
 
-        //send to book
-
-        //receive response
-
-        //return response
-
+        //return token
 
 
         echo "hello";
