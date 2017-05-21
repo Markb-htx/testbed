@@ -9,7 +9,7 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 class SoapController
 {
 
-    public function booking(Request $request,Response $response)
+    public function soap(Request $request,Response $response)
     {
         //take params
 
@@ -29,7 +29,6 @@ class SoapController
         //receive response
 
         //return response
-
 
 
         echo "hello";

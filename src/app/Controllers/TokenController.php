@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\controller;
+namespace App\Controllers;
 
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
@@ -18,13 +18,17 @@ class TokenController
         //validate
 
         //start timer
-            //extract card details
-            //create token
+        //extract card details
+        //create token
         //stop timer
 
-        //generate (json / xml )
+        //inject into xml (json /xml )
 
-        //return token
+        //send to book
+
+        //receive response
+
+        //return response
 
 
         echo "hello";

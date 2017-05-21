@@ -2,7 +2,7 @@
 
 require '../vendor/autoload.php';
 
-$app = new \DI\Bridge\Slim\App;
+$app = new \App\App;
 
 
 
