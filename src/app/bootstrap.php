@@ -4,7 +4,4 @@ require '../vendor/autoload.php';
 
 $app = new \App\App;
 
-
-
-
 require 'routes.php';
