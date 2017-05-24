@@ -7,10 +7,19 @@ use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use App\middleware\Tokeniser as Tokeniser;
 
+/**
+ * Class BookingController
+ * @package App\Controllers
+ */
 class BookingController
 {
 
-    public function booking(Request $request,Response $response, Tokeniser $token)
+    /**
+     * @param Request $request
+     * @param Response $response
+     * @param Tokeniser $token
+     */
+    public function booking(Request $request, Response $response, Tokeniser $token)
     {
         //take params
 
