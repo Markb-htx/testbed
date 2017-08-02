@@ -11,8 +11,16 @@ class SoapController
 
     public function soap(Request $request,Response $response)
     {
-        //take params
 
+        //get the request url as soap comes in different versions selected by the url
+
+        $route = $request->getAttribute('route');
+
+        $spliturl = (array) $this->SplitUrl((string) $route->getPattern());
+
+        print_r($spliturl);
+
+        //take params
         //what type of rest is it (json / xml )
 
         //validate
@@ -32,6 +40,27 @@ class SoapController
 
 
         echo "hello";
+    }
+
+    function SplitUrl($url)
+    {
+        //split by slash
+        $expand = explode("/",$url);
+        //count array() if array more that 7 reject the request and echo error
+        //this will stop bad / hackey URLs from getting any further
+        if (count($expand) > 7)
+        {
+            die;
+        }
+        else
+        {
+            //return split
+            return $expand;
+        }
+
+
+
+
     }
 
 }

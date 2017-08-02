@@ -23,8 +23,8 @@ class BookingController
     {
         //take params
 
-        $x = $token->TokenGenerator();
-        var_dump($x);
+        //$x = $token->TokenGenerator();
+        //var_dump($x);
         //what type of rest is it (json / xml )
 
         //validate
